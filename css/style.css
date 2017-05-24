@@ -1139,7 +1139,7 @@
     color: #fff;
     min-height: 650px;
     overflow: hidden;
-    background: url(../images/first_screen_bg.jpg);
+    background: url(../images/PortadaG+.jpeg);
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position:50% 50%;
@@ -1763,3 +1763,47 @@
 .pt30{padding-top: 30px;}
 .pt40{padding-top: 40px;}
 .pt50{padding-top: 50px;}
+
+/* ------------------------------------------------
+
+    17. Webmaster
+
+------------------------------------------------ */
+
+.idioms_box{
+      position: absolute;
+      right: 0;
+      top: 10px;
+      height: 100%;
+      width: 140px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+.idioms_box a{
+      margin-right: 10px;
+}
+.dark {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding-left: 5%;
+      border-radius: 6px;
+}
+.containerTitleSlider {
+      color: rgba(255, 255, 255, 1);
+      background-color: rgba(0, 0, 0, 0.3);
+}
+.justify{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.colorYellow{
+  color: yellow;
+}
+.colorRed{
+  color: rgb(255, 255, 255);
+}
+.containerShadow{
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+}
