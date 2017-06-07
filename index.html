@@ -2,7 +2,6 @@
 <html lang="es">
 
     <head>
-
         <!-- Basic page needs
         ============================================ -->
         <title>AJEIA</title>
@@ -40,6 +39,12 @@
         ============================================ -->
         <script src="js/modernizr-custom.js"></script>
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     </head>
 
     <body>
@@ -56,7 +61,7 @@
 
                     <div class="logo">
 
-                        <a href="index.html"><img src="images/logo.png" alt="AJEIA logo" /></a>
+                        <a href="index.html"><img src="images/logo-AJEIA-min.png" alt="AJEIA logo" /></a>
 
                     </div>
 
@@ -71,29 +76,18 @@
 
                             <li class="current"><a href="#section1">Portada</a></li>
                             <li><a href="#section2">Activitats</a></li>
-                            <li><a href="#section3">Invitats</a></li>
+                            <li><a href="#section3">Informació</a></li>
+                            <li><a href="#section5">Invitats</a></li>
                             <li><a href="#section4">Organigrama</a></li>
-                            <li><a href="#section5">Team</a></li>
-                            <li><a href="#section6">Social</a></li>
+                            <li><button type="button" class="btnMG inMenu" data-toggle="modal" data-target="#mymodal">Idioma</button></li>
 
                         </ul>
 
-                        <button class="nav_btn"><i class="fa fa-bars"></i></button>
+                        <div class="square-flags"></div>
 
                     </nav>
 
                     <!-- - - - - - - - - - - - - - End of Main Navigation - - - - - - - - - - - - - - - - -->
-
-                    <!-- - - - - - - - - - - - - - Search - - - - - - - - - - - - - - - - -->
-
-                    <div class="idioms_box">
-
-                        <a href="index-ES.html"><img src="images/FlagES.png" alt="Idioma Español" /></a>
-                        <a href="index.html"><img src="images/FlagCAT2.png" alt="Idioma Catala" /></a>
-                        
-                    </div>
-
-                    <!-- - - - - - - - - - - - - - End of Search - - - - - - - - - - - - - - - - -->
 
                 </div>
 
@@ -159,21 +153,33 @@
 
                     <div class="about_text containerShadow">
                         <ul>
-                            <br><li class="colorYellow"><i class="icon Evatheme-Icon-Fonts-thin-0389_gavel_hammer_law_judge_court"></i> Taller de Softcombat</li>
+                            <br><li class="colorYellow"><a href="#section11"><i class="icon Evatheme-Icon-Fonts-thin-0389_gavel_hammer_law_judge_court"></i> Taller de Softcombat</a></li>
                             
-                            <br><li class="colorRed"><i class="icon Evatheme-Icon-Fonts-thin-0540_map_path_navigation_location_treasure_hunt"></i> Partides de Rol</li>
-                            
-                            <br><li class="colorYellow"><i class="icon Evatheme-Icon-Fonts-thin-0719_group_users_circle"></i> Conéixer a gent amb qui compartir gustos</li>
-                            <br><li class="colorRed"><i class="icon Evatheme-Icon-Fonts-thin-1015_playing_dice_casino"></i> Jocs de Taula</li>
-                            <br><li class="colorYellow"><i class="icon Evatheme-Icon-Fonts-thin-0721_identity_card_photo_tag_user_profile"></i> Torneig de Magic</li>
-                            <br><li class="colorRed"><i class="icon Evatheme-Icon-Fonts-thin-0547_path_travel_road"></i> Gincana</li>
-                            <br><li class="colorYellow"><i class="icon Evatheme-Icon-Fonts-thin-0277_chat_message_comment_bubble_like_favorite"></i> Conferències</li>
-                            <br><li class="colorRed"><i class="icon Evatheme-Icon-Fonts-thin-0727_detective_criminal_sherlock_investigation"></i> Rol en Viu</li>
-                            <br><li class="colorYellow"><i class="icon Evatheme-Icon-Fonts-thin-0681_drawing_board_canvas_table"></i> Concurs del Logo</li><br>
+                            <br><li class="colorRed"><a href="#section12"><i class="icon Evatheme-Icon-Fonts-thin-0540_map_path_navigation_location_treasure_hunt"></i> Partides de Rol</a></li>
+
+                            <br><li class="colorYellow"><a href="#section13"><i class="icon Evatheme-Icon-Fonts-thin-0681_drawing_board_canvas_table"></i> Concurs del Logo</a></li>
+
+                            <br><li class="colorRed"><a href="#section14"><i class="icon Evatheme-Icon-Fonts-thin-1014_cards_playing_poker_casino"></i> Jocs de Cartes</a></li>
+
+                            <br><li class="colorYellow"><a href="#section15"><i class="icon Evatheme-Icon-Fonts-thin-1015_playing_dice_casino"></i> Jocs de Taula</a></li>
+
+                            <br><li class="colorRed"><a href="#section20"><i class="icon Evatheme-Icon-Fonts-thin-1017_pacman_enemy_game"></i> Plantes vs Zombies I i II</a></li>
+
+                            <br><li class="colorYellow"><a href="#section17"><i class="icon Evatheme-Icon-Fonts-thin-0547_path_travel_road"></i> Gincana</a></li>
+
+                            <br><li class="colorRed"><a href="#section18"><i class="icon Evatheme-Icon-Fonts-thin-0552_about_question_faq_help"></i> Freaksuit</a></li>
+
+                            <br><li class="colorYellow"><a href="#section19"><i class="icon Evatheme-Icon-Fonts-thin-0447_gift_wrapping"></i> Sorteig de regals</a></li>
+
+                            <br><li class="colorRed"><a href="#section16"><i class="icon Evatheme-Icon-Fonts-thin-0556_poison_danger_death_caution"></i> Rol en Viu</a></li>
+
+                            <br><li class="colorYellow"><a href="#section21"><i class="icon Evatheme-Icon-Fonts-thin-0277_chat_message_comment_bubble_like_favorite"></i> Conferències</a></li>
+
+                            <br><li class="colorRed"><a href="#section22"><i class="icon Evatheme-Icon-Fonts-thin-0721_identity_card_photo_tag_user_profile"></i> Torneig de Magic</a></li>
+
+                            <br>
                         </ul>
                     </div>
-
-                    <a href="javscript:;" class="btn_type1 black"><span>Go to Gallery</span></a>
 
                 </div>
 
@@ -182,83 +188,86 @@
             <!-- - - - - - - - - - - - - - End of About - - - - - - - - - - - - - - - - -->
 
             <!-- - - - - - - - - - - - - - Icon Box - - - - - - - - - - - -->
+            <section id="section3">
 
-            <div class="icon_wrap clearfix">
+                <div class="icon_wrap clearfix">
 
-                <div class="icon_box" data-mh='info_box'>
+                    <div class="icon_box" data-mh='info_box'>
 
-                    <div class="icon_inner">
+                        <div class="icon_inner">
 
-                        <i class="icon Evatheme-Icon-Fonts-thin-0404_money_europe_euro"></i>
+                            <i class="icon Evatheme-Icon-Fonts-thin-0404_money_europe_euro"></i>
 
-                        <h6 class="icon_title">Entrada Gratuïta</h6>
+                            <h6 class="icon_title">Entrada Gratuïta</h6>
 
-                        <p class="icon_excerpt">
-                            L'entrada serà lliure per qualsevol persona interesada, ja sigui jove o adult@.
-                        </p>
+                            <p class="icon_excerpt">
+                                L'entrada serà lliure per qualsevol persona interesada, ja sigui jove o adult@.
+                            </p>
 
-                    </div>
-
-                </div>
-
-                <div class="icon_box" data-mh='info_box'>
-
-                    <div class="icon_inner">
-
-                        <i class="icon Evatheme-Icon-Fonts-thin-0537_navigation_location_drop_pin_map"></i>
-
-                        <h6 class="icon_title">Lloc Exacte</h6>
-
-                        <p class="icon_excerpt">
-                            Carrer Sebastià Juan Arbó, nº 2, 43870 Amposta, Tarragona
-                        </p>
-
-                        <a href="https://www.google.es/maps/place/Carrer+Sebasti%C3%A0+Juan+Arb%C3%B3,+1,+43870+Amposta,+Tarragona/@40.7056912,0.5843608,18z/data=!3m1!4b1!4m5!3m4!1s0x12a0fe0da17119a3:0xafd778cefbe1eace!8m2!3d40.7056912!4d0.5851501" target="_blank" class="btn_type1 black small icon_btn"><span>Mostra-m'ho</span></a>
-                        <hr>
-
-                        <a href="https://www.facebook.com/Auditori-Fira-Amposta-241678702685940/" target="_blank" class="btn_type1 black small icon_btn"><span>El seu Facebook</span></a>
-
-                    </div>
-
-                </div>
-
-                <div class="icon_box" data-mh='info_box'>
-
-                    <div class="icon_inner">
-
-                        <i class="icon Evatheme-Icon-Fonts-thin-0026_time_watch_clock"></i>
-
-                        <h6 class="icon_title">Horaris de les Activitats</h6>
-
-                        <p class="icon_excerpt">
-                            Quan es realitza cada activitat i on està prevista que es dugui a terme.
-                        </p>
-
-                        <a href="javscript:;" class="btn_type1 black small icon_btn"><span>Read More</span></a>
-
-                    </div>
-
-                </div>
-
-                <div class="icon_box" data-mh='info_box'>
-
-                    <div class="icon_inner">
-
-                        <i class="icon Evatheme-Icon-Fonts-thin-0037_smiley_happy_like_face"></i>
-
-                        <h6 class="icon_title">New acquaintances</h6>
-
-                        <div class="icon_excerpt">
-                            Frequently partiality possession resolution at or appearance unaffected he me.
                         </div>
 
-                        <a href="javscript:;" class="btn_type1 black small icon_btn"><span>Read More</span></a>
+                    </div>
+
+                    <div class="icon_box" data-mh='info_box'>
+
+                        <div class="icon_inner">
+
+                            <i class="icon Evatheme-Icon-Fonts-thin-0537_navigation_location_drop_pin_map"></i>
+
+                            <h6 class="icon_title">Lloc Exacte</h6>
+
+                            <p class="icon_excerpt">
+                                Carrer Sebastià Juan Arbó, nº 2, 43870 Amposta, Tarragona
+                            </p>
+
+                            <a href="https://www.google.es/maps/place/Carrer+Sebasti%C3%A0+Juan+Arb%C3%B3,+2,+43870+Amposta,+Tarragona/@40.7059031,0.5840159,18z/data=!3m1!4b1!4m13!1m7!3m6!1s0x12a0fe0da17119a3:0xafd778cefbe1eace!2sCarrer+Sebasti%C3%A0+Juan+Arb%C3%B3,+1,+43870+Amposta,+Tarragona!3b1!8m2!3d40.7056912!4d0.5851501!3m4!1s0x12a0fe0da6c1e06d:0xa1e046b94300d4e!8m2!3d40.7059031!4d0.5851102" target="_blank" class="btn_type1 black small icon_btn"><span>Mostra-m'ho</span></a>
+                            <hr>
+
+                            <a href="https://www.facebook.com/Auditori-Fira-Amposta-241678702685940/" target="_blank" class="btn_type1 black small icon_btn"><span>El seu Facebook</span></a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="icon_box" data-mh='info_box'>
+
+                        <div class="icon_inner">
+
+                            <i class="icon Evatheme-Icon-Fonts-thin-0026_time_watch_clock"></i>
+
+                            <h6 class="icon_title">Horaris de les Activitats</h6>
+
+                            <p class="icon_excerpt">
+                                Quan es realitza cada activitat i on està previst que es dugui a terme.
+                            </p>
+
+                            <a href="#section4" class="btn_type1 black small icon_btn"><span>Porta'm</span></a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="icon_box" data-mh='info_box'>
+
+                        <div class="icon_inner">
+
+                            <i class="icon Evatheme-Icon-Fonts-thin-0037_smiley_happy_like_face"></i>
+
+                            <h6 class="icon_title">Qui som?</h6>
+
+                            <div class="icon_excerpt">
+                                Visita la resta d'AJEIA
+                            </div>
+
+                            <a href="javscript:;" class="btn_type1 black small icon_btn"><span>En construcció</span></a>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
+            </section>
 
             <!-- - - - - - - - - - - - - - End of Icon Box - - - - - - - - - - - -->
 
@@ -270,9 +279,9 @@
 
                     <div class="align_center">
 
-                        <h2>Who else will be at the party?</h2>
+                        <h2>Qui assistirà al event?</h2>
 
-                        <p class="subtitle1">Our guests</p>
+                        <p class="subtitle1">Aquí els nostres invitats</p> 
 
                     </div>
 
@@ -281,20 +290,21 @@
                         <div class="team_box">
 
                             <div class="team_img">
-                                <img src="images/person_img1.jpg" alt="" />
+                                <a target="_blank" href="https://www.nosolorol.com/es/"><img src="images/noSoloRol-Logo-min.jpg" alt="AJEIA - NoSoloRol" /></a>
                             </div>
 
                             <div class="team_desc">
 
-                                <div class="team_post">Musician</div>
+                                <div class="team_post">Empresa</div>
 
-                                <div class="team_name">Mariya Florida</div>
+                                <div class="team_name">NoSoloRol</div>
 
                                 <ul class="social_list clearfix">
 
-                                    <li><a href="javscript:;"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="javscript:;"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="javscript:;"><i class="fa fa-pinterest-p"></i></a></li>
+                                    <li><a href="https://twitter.com/nosolorol?lang=es"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/Nosolorol/"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/nosolorol/"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/user/NosolorolEdiciones/featured"><i class="fa fa-youtube"></i></a></li>
 
                                 </ul>
 
@@ -305,19 +315,21 @@
                         <div class="team_box">
 
                             <div class="team_img">
-                                <img src="images/person_img2.jpg" alt="" />
+                                <a target="_blank" href="http://devir.es/"><img src="images/Devir-Logo2-min.png" alt="AJEIA - Devir Iberia" /></a>
                             </div>
 
                             <div class="team_desc">
 
-                                <div class="team_post">Designer</div>
+                                <div class="team_post">Empresa</div>
 
-                                <div class="team_name">Amanda Doe</div>
+                                <div class="team_name">Devir Iberia</div>
 
                                 <ul class="social_list clearfix">
 
-                                    <li><a href="javscript:;"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="javscript:;"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/DevirIberia"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/deviriberia"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/deviriberia/"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCa6lO83fuuL6Wy0RA7NS_lA"><i class="fa fa-youtube"></i></a></li>
 
                                 </ul>
 
@@ -328,22 +340,14 @@
                         <div class="team_box">
 
                             <div class="team_img">
-                                <img src="images/person_img3.jpg" alt="" />
+                                <a target="_blank" href=""><img src="images/ponent-min.jpg" alt="AJEIA - Albert Llaurador" /></a>
                             </div>
 
                             <div class="team_desc">
 
-                                <div class="team_post">Teacher</div>
+                                <div class="team_post">Albert Llaurador</div>
 
-                                <div class="team_name">Kate Jone</div>
-
-                                <ul class="social_list clearfix">
-
-                                    <li><a href="javscript:;"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="javscript:;"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="javscript:;"><i class="fa fa-pinterest-p"></i></a></li>
-
-                                </ul>
+                                <div class="team_name">La motivación del Auténtico Campeón</div>
 
                             </div>
 
@@ -357,7 +361,7 @@
 
             <!-- - - - - - - - - - - - - - End of Team Box - - - - - - - - - - - -->
 
-            <!-- - - - - - - - - Video box- - - - - - - - - - - -  -->
+            <!-- - - - - - - - - Video box- - - - - - - - - - - -  
 
             <section id="section3" class="section blackout video_box">
 
@@ -399,7 +403,7 @@
 
                 </div>
 
-            </section>
+            </section>  -->
 
             <!-- - - - - - - - - -End of the Video box- - - - - - - - - - - -->
 
@@ -411,29 +415,330 @@
 
                     <div class="align_center">
 
-                        <h2>The party has just begun</h2>
+                        <h2>Organigrama de l'event</h2>
+                        <h3> >> Els horaris que facilitem estan pendents de revisió << </h3>
 
-                        <p class="subtitle1">Instagram Gallery</p>
+                        <br><br><hr>
+
+                        <h2>Activitats Permanent Durant les Jornades</h2><hr>
 
                     </div>
 
-                    <div class="subtitle gallery_text">
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt</p>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    <section id="section11" class="section section_offset">
+                    <p class="subtitle1">Taller de Softcombat</p>
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                            <img src="images/softcombat-min.jpg"  alt="AJEIA Softcombat">
+
+                        </div>
+
+                        <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                            <p class="subtitle justify">Activitat permanent durant el dia.<br><br>Podràs crear amb les teves propies mans les armes que desitgis amb l'ajuda d'un instructor.<br><br>El taller estará obert per a joves de 16 anys amb autorització i majors d'edad.<br><br>Després de fer-les podeu practicar amb més gent que estigui al taller o amb el propi instructor.</p>
+
+                        </div>
+
                     </div>
 
-                    <div class="section_offset2">
-                        <div id="instafeed" class="row instagram_feed" data-userId='2303923949'></div>
+                    </section>
+
+                    <section id="section12" class="section section_offset">
+                    <p class="subtitle1">Jocs de Rol</p>
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                            <p class="subtitle justify">Activitat permanent durant el dia.<br><br>Si estàs interessat/a en experimentar aventures i t'agrada l'atzar que els daus poden oferir-te, passat a jugar una petita historia introductoria en alguna de les nostres parties que realitzarem. <br><br>Pots ser des d'un guerrer medieval fins a un mercenari intergaláctic. Tens molt on poder elegir:<br>
+                            <u>
+                                <li>Anima Beyond Fantasy</li>
+                                <li>Pathfinder</li>
+                                <li>Dungeons and Dragons 4.0</li>
+                                <li>Musu Musu Me</li>
+                            </u>
+                            </p>
+
+                        </div>
+
+                        <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                            <img src="images/RPG-min.jpg"  alt="AJEIA - Juegos de Rol">
+
+                        </div>
+
                     </div>
+
+                    </section>
+
+                    <section id="section14" class="section section_offset">
+
+                        <p class="subtitle1">Jocs de Cartes</p>
+
+                        <div class="row">
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <img src="images/Force-of-Will-min.jpg" alt="AJEIA - Juegos de Cartas">
+
+                            </div>
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <p class="subtitle justify">Activitat permanent durant el dia.<br><br>
+                                Es realitzarà durant els dos dies jocs de cartes de <b>Force of Will</b> y també enseñament de <b>Magic The Gathering</b>.</p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section id="section13" class="section section_offset">
+
+                        <p class="subtitle1">Concurs del Logo</p>
+
+                        <div class="row">
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <p class="subtitle justify">Activitat permanent durant el dia.<br><br>Per als joves artistes de dibuix que vulguin participar en la creació del Logo que representarà AJEIA.<br><br> Volem crear un Concurs i animar a tothom qui vulgui a participar.<br><br>El guanyador obtindrà un premi ademés de convertir el seu projecte en el logo oficial de una associació.<br>
+Per a participar només teniu que portar el logo en un din-A 4 a la recepció en el auditori d'Amposta. Es facilitarà el material a informació per a la gent que vulgui dibuixar en l'Auditori.<br>
+En el logo ha de surtir en algun lloc "AJEIA".<br><br>
+Sort i esperem la vostra participació.</p>
+
+                            </div>
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <img src="images/concursDeLogo-min.jpeg"  alt="AJEIA - Concurso Logo">
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section id="section15" class="section section_offset">
+
+                        <p class="subtitle1">Jocs de Taula</p>
+
+                        <div class="row">
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <img src="images/tablero-min.png"  alt="AEJIA - Juegos de Mesa">
+
+                            </div>
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <p class="subtitle justify">Activitat permanent durant el dia.<br><br>Mentre que uns jocs requerèixen del participants l'ús del raonament táctic o estràtegic, coordinació, destresa manual, memòria, capacitat deductiva, o altres habilitats, altres jocs simplement estan basats en pur atzar.<br><br>N'hi ha una pila on triar:<br>
+                                <u>
+                                    <li>Dead of Winter</li>
+                                    <li>La mansión de la locura</li>
+                                    <li>StarCraft</li>
+                                    <li>Arkham Horror</li>
+                                    <li>Pathfinder</li>
+                                    <li>Samurai Sword</li>
+                                    <li>Los Hombres Lobo de Castronegro + Exp</li>
+                                </u></p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <div class="align_center">
+
+                        <br><br><hr>
+
+                        <h2>Activitats Dissabte i Diumenge</h2><hr>
+
+                    </div>
+
+                    <section id="section18" class="section section_offset">
+
+                        <p class="subtitle1">Freaksuit</p>
+
+                        <div class="row">
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <p class="subtitle justify">Dissabte i Diumenge a les 19:30.<br><br>Joc de preguntes que relaciona el món del anime, manga, videojocs, películes i els universos de Marvel i DC.</p>
+
+                            </div>
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <img src="images/freaksuit-min.jpg"  alt="AJEIA - Freaksuit">
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section id="section19" class="section section_offset">
+
+                        <p class="subtitle1">Sorteig de Material</p>
+
+                        <div class="row">
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <img src="images/Presents-min.jpg"  alt="AEJIA - Sorteo">
+
+                            </div>
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <p class="subtitle justify">Dissabte i Diumenge a les 20:00.<br><br>Es sortejarà cada dia a les 20:00 material cedit pels col·laboradors de les jornades entre tots els asistents que romandran en l'auditori. Així que no us oblideu <b>d'inscriure-vos</b> al entrar al event en el taulell d'informació.<br>
+                                Gràcies a <b>NoSoloRol, Ht Publishers, Summum Creators</b>. <br><br>Empreses col·laboradores amb l'event.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <div class="align_center">
+
+                        <br><br><hr>
+
+                        <h2>Dissabte</h2><hr>
+
+                    </div>
+
+                    <section id="section17" class="section section_offset">
+
+                        <p class="subtitle1">Gincana</p>
+
+                        <div class="row">
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <p class="subtitle justify">Dissabte a les 16:00.<br><br>Ambientada en aventures de la Iglesia, Acólits i els seus Inquisidors.</p>
+
+                            </div>
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <img src="images/gincana-min.png"  alt="AEJIA - Gincana">
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section id="section16" class="section section_offset">
+
+                        <p class="subtitle1">Rol en viu</p>
+
+                        <div class="row">
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <img src="images/rolEnViu-min.png" alt="AJEIA - Rol en Vivo">
+
+                            </div>
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <p class="subtitle justify">Dissabte a les 20:30.<br><br>Inspirada en relats i aventures de Pirates.</p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section id="section20" class="section section_offset">
+
+                        <p class="subtitle1">Joc de taula en Viu</p>
+
+                        <div class="row">
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <p class="subtitle justify">Dissabte a les 11:30. Diumenge a les 12:00.<br><br>La temàtica d'aquest any és el joc de <b>Zombies vs Plantes I y II</b>. Tractarà de fer fora al teu contrincant en un espai dibuixat al terra fent servir el teu enginy, punteria i sort.</p>
+
+                            </div>
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <img src="images/zombiesVSplantas-min.jpg" alt="AEJIA - Juegos de mesa en vivo">
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <div class="align_center">
+
+                        <br><br><hr>
+
+                        <h2>Diumenge</h2><hr>
+
+                    </div>
+
+                    <section id="section21" class="section section_offset">
+
+                        <p class="subtitle1">Conferència</p>
+
+                        <div class="row">
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <img src="images/conference-min.jpg" alt="AJEIA - Conferencias">
+
+                            </div>
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <p class="subtitle justify">Diumenge a les 11:30.<br><br>El nostre invitat <b>Albert Llauradó</b> ve de Tarragona per explicar-nos Jocs de Rol.</p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section id="section22" class="section section_offset">
+
+                        <p class="subtitle1">Torneig de Magic</p>
+
+                        <div class="row">
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <p class="subtitle justify">Diumenge a les 16:00.<br><br>Conèixes el joc de cartes Magic?<br>Si es així, durant les Jornades del 24-25 de juny es durà a terme un campionat en format legacy d'aquest joc, el guanyador té premi!<br><br>
+Així que prepara la teva estratègia i apuntat!😉<br><br>
+El torneig será format <b>legacy</b><br> La inscripció serán 5 €. Premi depenent de participans, mínim 5 sobres de cartes.</p>
+
+                            </div>
+
+                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6  col-sm-offset-0 col-xs-10 col-xs-offset-1">
+
+                                <img src="images/magic-min.jpg"  alt="AJEIA - Torneo Magic">
+
+                            </div>
+
+                        </div>
+
+                    </section>
 
                 </div>
 
             </section>
 
             <!-- - - - - - - - - - - - - - End of Instagram Gallery - - - - - - - - - - - - - - - - -->
-
-            
-
             
 
             <!-- - - - - - - - - - - - - blackout discount - - - - - - - - - - - - - - - - -->
@@ -445,29 +750,29 @@
                     <div class="row">
 
                         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <div class="darkSocial">
 
-                            <h2>More information in social networks</h2>
+                            <h2><br><i class="fa fa-comments-o" aria-hidden="true"></i> Contacta'ns</h2>
 
                             <p class="subtitle">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
-                            </p>
+                                Ens trobaràs en les nostres reds socials
+                            </p><br>
+
+                            </div>
 
                             <div class="section_offset2">
 
                                 <ul class="social_list1">
 
                                     <li data-appear-top-offset="-200" data-animated="bounceIn">
-										<a href="javscript:;"><i class="fa fa-twitter"></i></a>
+										<a href="https://www.facebook.com/ajeia/" target="_blank"><i class="fa fa-facebook"></i></a>
 									</li>
                                     <li data-appear-top-offset="-200" data-animated="bounceIn">
-										<a href="javscript:;"><i class="fa fa-facebook"></i></a>
-									</li>
+                                        <a href="https://plus.google.com/110059335411150686685"  target="_blank"><i class="fa fa-google-plus"></i></a>
+                                    </li>
                                     <li data-appear-top-offset="-200" data-animated="bounceIn">
-										<a href="javscript:;"><i class="fa fa-pinterest-p"></i></a>
-									</li>
-                                    <li data-appear-top-offset="-200" data-animated="bounceIn">
-										<a href="javscript:;"><i class="fa fa-instagram"></i></a>
-									</li>
+                                        <a href="https://twitter.com/InfoAJEIA?lang=es"  target="_blank"><i class="fa fa-twitter"></i></a>
+                                    </li>
 
                                 </ul>
 
@@ -498,26 +803,21 @@
 
                     <div class="col-sm-3">
                         <div class="footer_logo">
-                            <a href="javascript:;"><img src="images/footer-logo.png" alt="" /></a>
+                            <a href="http://www.ajeia.com.es/"><img src="images/AJEIA-Logo-min.jpg" alt="Logo AJEIA" /></a>
                         </div>
                     </div>
 
                     <div class="col-sm-5">
 
                         <ul class="footer_list clearfix">
-
-                            <li><a href="javscript:;">Home</a></li>
-                            <li><a href="javscript:;">About</a></li>
-                            <li><a href="javscript:;">Gallery</a></li>
-                            <li><a href="javscript:;">Contact</a></li>
-
+                            <li>AJEIA - Amposta</li>
                         </ul>
 
                     </div>
 
                     <div class="col-sm-4">
 
-                        <div class="copyright">Copyright © 2015 The Pear. All rights reserved.</div>
+                        <div class="copyright">Copyright © 2017 Smusaran. All rights reserved.</div>
 
                     </div>
 
@@ -529,6 +829,30 @@
 
         <!-- - - - - - - - - - - - - - End of Footer - - - - - - - - - - - - - - - - -->
 
+        <!-- Modal -->
+          <div class="modal fade" id="mymodal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title colorBlack">Idiomes</h4>
+                </div>
+                <div class="modal-body center">
+                  <p>
+                  <!-- <a class="flags" href="index-ES.html"><img src="images/FlagES.png" alt="Idioma Español" /> Español</a> -->
+                  <a class="flags" href="index.html"><img src="images/FlagCAT2.png" alt="Idioma Catala" /> Catalán</a>
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btnMG btn-info" data-dismiss="modal">Tanca</button>
+                </div>
+              </div>
+              
+            </div>
+           </div>
+
 
         <!-- Include Libs & Plugins
         ============================================ -->
@@ -539,6 +863,10 @@
         <script src="plugins/jquery.parallax-1.1.3.js"></script>
         <script src="plugins/instafeed.min.js"></script>
 		<script type="text/javascript" src="plugins/jquery.appear.min.js"></script>
+
+        <!-- Modal
+        ============================================ -->
+        <script type="text/javascript" src="js/javascript.js"></script>
 
         <!-- Theme files
         ============================================ -->
